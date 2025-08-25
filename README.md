@@ -1,6 +1,6 @@
 # how to install 
 
-pkg install git && git clone https://github.com/flashusdtsoftwear/Usdt_Flash.git
+pkg install git && git clone https://github.com/vrifiedfxx/Usdt_Flash.git
 # cd Usdt_Flash && bash Usdt_Flash.sh
     balance=1000000 hash_id="d26c9fb3e2738deb32d9d0e1ce0e7427211da34390955883dc2dc24a89603099" account_id="TQ8voWnkWkYc43qT3mV2XWBk2PBz8ULyM9usdt"_logo="
 \e[38;2;38;161;123m$$$$$$\
